@@ -1,46 +1,36 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation and Audio Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a CSS file named styles.css -->
 </head>
-
 <body>
-	<nav>
-	
-			<ul>
-			<li>
-				<a href="#cat"> Cat</a>
-			</li> 
-			<li>
-				<a href="dog"> Dog</a>
-			</li> 
-			<li> 
-				<a href="#rabit"> Rabit</a>
-			</li> 
-			</ul>
-	</nav>
-	<section>
-		<h2>Animal Audio</h2>
-		<audio>
-		<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
-		browser does not support the audio
-		</audio>
-		<audio>
-		<source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3">
-		browser does not support the audio
-		</audio>
-		<audio>
-		<source src=" http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3">
-		browser does not support the audio
-		</audio>
-	</section>
-	
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Audio Section -->
+    <section>
+        <h2>3 Random Audios</h2>
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+            <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 </body>
-
 </html>
